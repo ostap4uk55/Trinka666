@@ -1,11 +1,27 @@
 <!DOCTYPE html>
-<html lang="ukr">
+<html lang="uk">
   <head>
     <meta charset="UTF-8">
     <title>Trinka666</title>
 
   </head>
   <body>
-    <h1>Hi!</h1>
+    <div id="content">
+      <h1>Політика конфіденційності</h1>
+    </div>
+  <script>
+      fetch('privet_pol.txt')
+        .then(response => response.text())
+        .then(text => {
+          const paragraphs = text.split('\n\n');
+          const contentElement = document.getElementById('content');
+
+          paragraphs.forEach(paragraph => {
+            const p = document.createElement('p');
+            p.textContent = paragraph;
+            contentElement.appendChild(p);
+          });
+        });
+    </script>
   </body>
 </html>
