@@ -13,7 +13,7 @@
     <button id="terms_of_use">Умови використання</button>
   </header>
   <div class="content">
-    <h2>Політика конфіденційності</h2>
+    <h2 id="section_title">Політика конфіденційності</h2>
       <div id="text">
       </div>
     <p>Зв'язок із технічною підтримкою в <a href="https://t.me/tri666ka">телеграм</a></p>
@@ -32,13 +32,9 @@
             const contentElement = document.getElementById('text');
             const titleElement = document.getElementById('section_title');
 
-            // Clear existing content
             contentElement.innerHTML = '';
-
-            // Update title
             titleElement.textContent = title;
 
-            // Add new content
             paragraphs.forEach(paragraph => {
               const p = document.createElement('p');
               p.textContent = paragraph;
