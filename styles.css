@@ -12,11 +12,34 @@ header h1 {
   text-align: center;
   font-size: 3rem; /* Дуже великий шрифт для мобільних */
   margin: 20px 0;
-  background: linear-gradient(90deg, #ff7f50, #ff4500);
+  background: linear-gradient(90deg, #ff7f50, #ff4500); /* Градієнт */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
+  background-clip: text; /* Для підтримки інших браузерів */
+  color: transparent; /* Забезпечує прозорість кольору */
+}
+/* Стилі для кнопок */
+header button {
+  background-color: #001f3f; /* Такий самий, як у фону */
+  color: #ffffff;
+  border: 2px solid #ffffff; /* Білий контур */
+  border-radius: 0; /* Без круглих країв */
+  padding: 10px;
+  flex: 1;
+  text-align: center;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+header button:hover {
+  background-color: #003366; /* Трохи світліший синій */
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+  flex-wrap: wrap;
 }
 
 /* Контентний блок */
