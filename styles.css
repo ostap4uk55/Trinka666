@@ -12,7 +12,7 @@ header h1 {
   text-align: center;
   font-size: 3rem; /* Дуже великий шрифт для мобільних */
   margin: 20px 0;
-  background: linear-gradient(90deg, #8550ff, #ff0000)
+  background: linear-gradient(90deg, #8550ff, #ff0000);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text; /* Для підтримки інших браузерів */
