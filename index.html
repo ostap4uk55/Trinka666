@@ -3,18 +3,27 @@
   <head>
     <meta charset="UTF-8">
     <title>Trinka666</title>
-
+    <link rel="stylesheet" type="text/css" href="styles.css">
   </head>
   <body>
-    <div id="content">
-      <h1>Політика конфіденційності</h1>
+  <header>
+  <h1>Trinka666</h1>
+  </header>
+  <div class="content">
+    <h2>Політика конфіденційності</h2>
+      <div id="text">
+      </div>
+    <p>Зв'язок із технічною підтримкою в <a href="https://t.me/Azima666">телеграм</a></p>
     </div>
+  <footer>
+    <p>Зв'язок із технічною підтримкою в <a href="https://t.me/Azima666">телеграм</a></p>
+  </footer>
   <script>
       fetch('privet_pol.txt')
         .then(response => response.text())
         .then(text => {
           const paragraphs = text.split('\n\n');
-          const contentElement = document.getElementById('content');
+          const contentElement = document.getElementById('tex');
 
           paragraphs.forEach(paragraph => {
             const p = document.createElement('p');
