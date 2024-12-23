@@ -23,7 +23,7 @@
         .then(response => response.text())
         .then(text => {
           const paragraphs = text.split('\n\n');
-          const contentElement = document.getElementById('tex');
+          const contentElement = document.getElementById('text');
 
           paragraphs.forEach(paragraph => {
             const p = document.createElement('p');
